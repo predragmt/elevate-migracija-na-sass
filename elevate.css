@@ -47,7 +47,7 @@ h2 {
   cursor: pointer;
   font-size: 18px;
   font-weight: bold;
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   border: none;
   border-radius: 8px;
@@ -94,7 +94,7 @@ h2 {
 }
 
 .card {
-  background: white;
+  background: #ffffff;
   padding: 20px;
   width: 27%;
   border-radius: 10px;
@@ -106,7 +106,7 @@ h2 {
   text-align: center;
   padding: 20px;
   background: #222;
-  color: white;
+  color: #ffffff;
 }
 
 /* Responsive */
