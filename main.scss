@@ -1,0 +1,62 @@
+@use 'variables' as *;
+@use 'primary-btn' as *;
+@use 'header' as *;
+@use 'content' as *;
+
+/* General Styles */
+body {
+    font-family: $font;
+    color: $primary-font-color;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    font-size: $font-size-medium;
+}
+
+/* Main Section */
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 10px;
+
+    @include responsive(576px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        width: 50%;
+
+        @include responsive(576px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    h1 {
+        font-size: $font-size-large;
+        color: $primary-color;
+    }
+
+    p {
+        font-size: $font-size-base;
+
+        @include responsive(576px) {
+            width: 250px;
+        }
+    }
+
+    img {
+        width: 40%;
+
+        @include responsive(576px) {
+            margin-top: 60px;
+            width: 80%;
+        }
+    }
+}

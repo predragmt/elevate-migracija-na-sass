@@ -1,0 +1,156 @@
+/* Primary Button */
+.primary-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+}
+.primary-btn:hover {
+  box-shadow: 0px 5px 15px rgba(255, 126, 95, 0.4);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff7e5f;
+}
+.navbar .nav-links {
+  list-style: none;
+  padding: 0;
+}
+@media screen and (max-width: 576px) {
+  .navbar .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.navbar .nav-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.navbar .nav-links a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar .nav-links a:hover {
+  color: #ff7e5f;
+}
+
+/* Features & Plans Sections */
+.features {
+  background: #f3f3f3;
+}
+
+.center-section {
+  text-align: center;
+  padding: 50px 10px;
+}
+
+.card-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  background: #ffffff;
+  padding: 20px;
+  width: 27%;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: #ffffff;
+}
+
+/* Responsive */
+@media screen and (max-width: 992px) {
+  .card-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .card {
+    width: 80%;
+  }
+}
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+/* Main Section */
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 10px;
+}
+@media screen and (max-width: 576px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.main .content {
+  width: 50%;
+}
+@media screen and (max-width: 576px) {
+  .main .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+.main h1 {
+  font-size: 48px;
+  color: #ff7e5f;
+}
+.main p {
+  font-size: 18px;
+}
+@media screen and (max-width: 576px) {
+  .main p {
+    width: 250px;
+  }
+}
+.main img {
+  width: 40%;
+}
+@media screen and (max-width: 576px) {
+  .main img {
+    margin-top: 60px;
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

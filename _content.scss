@@ -1,0 +1,41 @@
+@use 'variables' as *;
+
+/* Features & Plans Sections */
+.features {
+    background: $background-color-light;
+}
+.center-section {
+    text-align: center;
+    padding: 50px 10px;
+}
+.card-list {
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    background: $background-color;
+    padding: 20px;
+    width: 27%;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: $background-color-dark;
+    color: #ffffff;
+}
+
+/* Responsive */
+@include responsive(992px) {
+    .card-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .card {
+        width: 80%;
+    }
+}

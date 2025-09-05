@@ -1,0 +1,21 @@
+$font: Arial, sans-serif;
+$primary-font-color: #333;
+$secondary-font-color: #ffffff;
+$font-size-large: 48px;
+$font-size-medium: 32px;
+$font-size-base: 18px;
+
+$primary-color: #ff7e5f;
+$secondary-color: #feb47b;
+$background-color: #ffffff;
+$background-color-light: #f3f3f3;
+$background-color-dark: #222;
+
+$box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+$border-radius: 10px;
+
+@mixin responsive($max-screen-size) {
+    @media screen and (max-width: $max-screen-size) {
+        @content;
+    }
+}

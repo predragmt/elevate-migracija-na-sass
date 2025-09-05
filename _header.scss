@@ -1,0 +1,42 @@
+@use 'variables' as *;
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: $box-shadow;
+    margin-bottom: 10px;
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: $primary-color;
+    }
+
+    .nav-links {
+        list-style: none;
+        padding: 0;
+
+        @include responsive(576px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        a {
+        text-decoration: none;
+        font-weight: bold;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}
