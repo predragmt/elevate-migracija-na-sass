@@ -50,6 +50,12 @@ h2 {
         list-style: none;
         padding: 0;
 
+        @include responsive(576px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         li {
             display: inline-block;
             margin: 0 10px;
@@ -93,8 +99,21 @@ h2 {
     justify-content: space-between;
     padding: 100px 10px;
 
+    @include responsive(576px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .content {
         width: 50%;
+
+        @include responsive(576px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
     }
 
     h1 {
@@ -104,10 +123,19 @@ h2 {
 
     p {
         font-size: $font-size-base;
+
+        @include responsive(576px) {
+            width: 250px;
+        }
     }
 
     img {
         width: 40%;
+
+        @include responsive(576px) {
+            margin-top: 60px;
+            width: 80%;
+        }
     }
 }
 
